@@ -16,6 +16,8 @@ rbac:
   # rbac.create -- If true, then rbac resources (clusterroles and clusterrolebindings) will be created for the selected components.
   # Temporary rbac resources will still be created, to ensure a functioning installation process
   create: true
+  # rbac.enableArgoproj -- If set to true, the clusterrole will give access to argoproj.io resources
+  enableArgoproj: true
 
 serviceAccount:
   # serviceAccount.create -- Specifies whether a service account should be created for each component
